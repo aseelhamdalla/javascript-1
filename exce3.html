@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("images").value;
+        if (x== "image") {
+            document.getElementById("flagimg").src = "images/img1.png";
+            document.getElementById("flagimg").alt = "flage";
+        } else {
+            document.getElementById("flagimg").src = "images/img2.png";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <select name="images" id="images" onchange="myFunction()">
+      <option  value="image" alt="flage">image</option>
+      <option  value="no image">no image</option>
+    </select>
+    <img id="flagimg" src="" alt="">
+  </body>
+</html>
